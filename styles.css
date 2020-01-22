@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+#toolbar {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F8F3E6;
+  position: absolute;
+}
+
+.array-changer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#generate-array {
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .15);
+  background-color: #F8F3E6;
+  color: #2C2627;
+  margin: auto;
+}
+
+.array-title {
+  color: #2C2627;
+  font-size: 16px;
+}
+
+.algo-buttons {
+  margin: auto;
+}
+
+.algo-button,
+#sort-start {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .15);
+  background-color: #F8F3E6;
+}
+
+
+.active,
+btn:hover {
+  background-color: rgba(44, 38, 39, 0.95);
+  color: #F8F3E6;
+}
+
+#change-size,
+.array-value {
+  margin-left: 1rem;
+}
+
+#array-body {
+  position: relative;
+  top: 6rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #2C2627;
+  display: flex;
+  justify-content: center;
+}
+
+.array-container {
+  width: 960px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+}
+
+.array-element {
+  width: 20px;
+  height: 150px;
+  background-color: #F8F3E6;
+  color: #F8F3E6;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 5px;
+  transition: 0.2s all ease;
+}
+
+.element-id {
+  position: absolute;
+  font-size: 12px;
+}
+
+.button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+#stop-visualisation {
+  position: relative;
+  padding: 1rem 3rem;
+  color: #2C2627;
+  z-index: 1000;
+  top: -175px;
+  left: 45vw;
+  background-color: #F8F3E6;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all ease 1s;
+}
